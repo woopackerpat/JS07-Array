@@ -1,0 +1,1 @@
+let frieds = ['Tea', 'Gun', 'Karn' , 'Mon', 'Term']
