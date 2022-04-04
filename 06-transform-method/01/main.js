@@ -37,7 +37,7 @@ const array8 = [0, 5, 10, 7, 6, 5, 0];
 
 const array9 = [1, 16, 81, 256, 625, 1296];
 // result: [1, 2, 3, 4, 5, 6]
-array9.map(element => element**4)
+array9.map(element => element**(1/4))
 
 const array10 = [
   { name: 'apple', age: 14 },

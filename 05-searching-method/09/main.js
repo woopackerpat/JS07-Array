@@ -5,11 +5,11 @@ array1.filter(element => element > 10)
 
 const array2 = [1, 2, 3, 4];
 // ค่าที่เป็นเลขคี่
-array2.filter(element => element % 2 !== 0)
+array2.filter(element => element % 2 !== 0)// จะเขียนหรือไม่เขียน !== 0 ก็ได้
 
 const array3 = [1, '1', 2, {}];
 // ค่าที่ประเภทข้อมูลเป็น Number
-array3.filter(element => typeof element === 'number' && isNaN(element) === false)
+array3.filter(element => typeof element === 'number' )
 
 
 const array4 = ['apple', 'banana', 'orange', 'pineapple', 'watermeon'];
@@ -28,7 +28,7 @@ array6.filter(element => element % 3 === 0)
 
 const array7 = ['Elephant', 'Ant', 'Cat', 'Eagle', 'Zebra'];
 // ค่าที่ขึ้นต้นด้วยตัว E
-array7.filter(element => element[0] === 'E')
+array7.filter(element => element[0] === 'E') // element => element.startsWith("E")
 
 const array8 = ['APPLE', 'oRanGE', 'PEACH', 'PaPAYA'];
 // ค่าที่เป็นตัวพิมพ์ใหญ่ทั้งหมด
@@ -68,4 +68,8 @@ const array12 = [
   { name: 'Joe', birth: '2002-06-13' }
 ];
 
-array12.filter(element => element.birth.split('-')[1] === '06')
+array12.filter(element => element.birth.split('-')[1] === '06') // element.slice(5, 7) === '06'
+
+//หรือ element => new Date(element).getMonth() === 5 format ต้องอยู่ในรูปแบบนี้เท่านั้น เรียกว่า ISO (ปี - เดือน - วัน)
+
+// new Date(11111) -> 1111 คือจำนวน millisecond นับจาก 1 Jan 1970

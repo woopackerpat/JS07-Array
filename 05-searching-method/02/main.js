@@ -4,7 +4,7 @@ function findA(arr) {
 
     let arrIndex = []
 
-    forEach((element, index) => {
+    arr.forEach((element, index) => {
         if(element === 'a') arrIndex.push(index)
     })
 }

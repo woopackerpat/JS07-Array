@@ -11,4 +11,5 @@ const tasks = [
 
   //วิธี 2
 
-  tasks.findIndex(element => element.id === 2)
+  const idx = tasks.findIndex(element => element.id === 2);
+  console.log(idx)

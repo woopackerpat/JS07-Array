@@ -4,4 +4,4 @@ arr.push(function() {
   alert(this);
 })
 
-arr[2](); // window
+arr[2](); // function() {alert(["a", "b", function])}

@@ -1,12 +1,14 @@
 let animals = ['Dog', 'Cat', 'Rat']
 animals.push('Fish')
-animals.unshift('Hourse')
+animals.unshift('Horse')
 
 animals.push('Giraffe', 'Snake')
 
 animals.shift()
 
+animal.pop()
+
 animal.shift()
 
-['Cat', 'Rat', 'Fish']
+['Cat', 'Rat', 'Fish', 'Giraffe']
 
